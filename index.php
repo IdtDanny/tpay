@@ -9,6 +9,14 @@
     $sessionToken='';
     $error_message='';
     $user_balance='';
+    $agent_errorMessage = ''; 
+    $agent_deleteErrorMessage  = ''; 
+    $update_errorMessage  = ''; 
+    $agent_successMessage   = ''; 
+    $agent_deleteSuccessMessage  = ''; 
+    $update_successMessage  = ''; 
+    $busy_successMessage   = ''; 
+    $busy_errorMessage    = ''; 
 
     # Getting Data From Form...
 
