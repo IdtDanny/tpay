@@ -14,6 +14,8 @@
     $admin_username = $_SESSION['sessionToken']->admin_username;
     $admin_ID = $_SESSION['sessionToken']->admin_ID;
     $admin_name = $_SESSION['sessionToken']->admin_name;
+    $update_errorMessage = '';
+    $update_successMessage = '';
 
     # Calculating Each Number of Users, Cards, business, agents and so on...
     $sql_agent = 'SELECT * FROM agent';
@@ -124,5 +126,5 @@
 ?>
 
 <?php 
-    include 'include/notification_front.html';
+    include 'include/notification_front.php';
 ?>

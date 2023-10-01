@@ -197,6 +197,7 @@
                                 break;
                             }
                             else {
+                                if ($business_Result || $agent_Result) {
                         ?>
 
                             <div class="list-group-item py-3 bg-light-subtle">
@@ -242,7 +243,7 @@
                                     </span>
                                 </small>
                             </div>
-                            <?php } } } ?>
+                            <?php } } } } ?>
 
                     </div>
 

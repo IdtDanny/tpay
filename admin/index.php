@@ -14,6 +14,10 @@
     $admin_username = $_SESSION['sessionToken']->admin_username;
     $admin_ID = $_SESSION['sessionToken']->admin_ID;
     $admin_name = $_SESSION['sessionToken']->admin_name;
+    $photo_errorMessage = '';
+    $photo_successMessage = '';
+    $successMessage  = '';
+    $errorMessage = '';
 
     # Calculating Each Number of Users, Cards, business, agents and so on...
     $sql_agent = 'SELECT * FROM agent';
