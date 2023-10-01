@@ -180,7 +180,12 @@
                             ]);
                             $business_Result = $business_FetchStatement->fetch();
 
-                            $business_name = $business_Result->business_name;
+                            if ($business_Result) {
+                                $business_name = $business_Result->business_name;
+                            }
+                            else {
+                                $business_name = '';
+                            }
 
                             $agent_FetchQuery = 'SELECT * FROM `agent` WHERE `agent_pin` = :receiver_id OR `agent_pin` = :sender_id';
                             $agent_FetchStatement = $pdo->prepare($agent_FetchQuery);
@@ -190,7 +195,13 @@
                             ]);
                             $agent_Result = $agent_FetchStatement->fetch();
 
-                            $agent_name = $agent_Result->agent_name;
+                            if ($agent_Result) {
+                                $agent_name = $agent_Result->agent_name;
+                            }
+                            else {
+                                $agent_name = '';
+                            }
+
 
                             # To list few of notify. 
                             if ($key == 15) {
