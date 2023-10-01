@@ -161,7 +161,12 @@
                             ]);
                             $client_Result = $client_FetchStatement->fetch();
 
-                            $client_name = $client_Result->client_name;
+                            if ($client_Result) {
+                                $client_name = $client_Result->client_name;
+                            }
+                            else {
+                                $client_name = '';
+                            }
 
                             # To list few of notify. 
                             if ($key == 15) {

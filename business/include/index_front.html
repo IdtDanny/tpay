@@ -181,7 +181,13 @@
                                         ]);
                                         $client_Result = $client_FetchStatement->fetch();
 
-                                        $client_name = $client_Result->client_name;
+                                        if ($client_Result) {
+                                            $client_name = $client_Result->client_name;
+                                        }
+                                        else {
+                                            $client_name = '';
+                                        }
+
                                 ?>
                                 <a href="#?vnID=<?php echo $notify->nID ?>" class="list-group-item list-group-item-action">
                                     <div class="d-flex w-100 justify-content-between">
