@@ -64,7 +64,7 @@
     # getting agent delete response
     if (isset($_GET['vnID'])) {
         $dnID = $_GET['vnID'];
-        $sql_nupdate = 'UPDATE `notification` SET `status` =:nread WHERE `nID` = :nid';
+        $sql_nupdate = 'UPDATE `notification_all` SET `status` =:nread WHERE `nID` = :nid';
 
         # PDO Prep & Exec..
         $update_notify = $pdo->prepare($sql_nupdate);
@@ -126,5 +126,5 @@
 ?>
 
 <?php 
-    include 'include/notification_front.php';
+    include 'include/notification_front.html';
 ?>

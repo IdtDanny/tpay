@@ -22,7 +22,6 @@
     require '../PHPMailer/Exception.php';
 
     # Getting Information of Signed in User
-    $business_username = $_SESSION['sessionToken']->business_username;
     $bID = $_SESSION['sessionToken']->bID;
     $business_name = $_SESSION['sessionToken']->business_name;
     $business_tin = $_SESSION['sessionToken']->business_tin;

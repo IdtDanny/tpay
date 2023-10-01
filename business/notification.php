@@ -11,11 +11,17 @@
     require_once '../public/config/connection.php';
 
     # Getting Information of Signed in User
-    $business_username = $_SESSION['sessionToken']->business_username;
     $bID = $_SESSION['sessionToken']->bID;
     $business_name = $_SESSION['sessionToken']->business_name;
     $business_tin = $_SESSION['sessionToken']->business_tin;
     $photo = $_SESSION['sessionToken']->photo;
+
+    $notify_updateErrorMessage = '';
+    $notify_deleteErrorMessage = '';
+    $update_errorMessage = '';
+    $notify_updateSuccessMessage = '';
+    $notify_deleteSuccessMessage = '';
+    $update_successMessage = '';
 
     # Getting business Info. for update form...
 
