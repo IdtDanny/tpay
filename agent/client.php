@@ -297,7 +297,7 @@
                             'rID'           =>  $confirm_top,
                             'client_id'     =>  $client_id,
                             'client_name'   =>  $client_name,
-                            'amount'        =>  $pamount,
+                            'amount'        =>  $amount,
                             'raction'       =>  'topup',
                             'rstatus'       =>  'approved'
                         ]);
